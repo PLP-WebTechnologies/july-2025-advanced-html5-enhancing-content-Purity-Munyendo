@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+    <link rel="icon" type="image/png" href="images/favicon.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Lists Section -->
+        <section id="lists">
+            <h2>Lists</h2>
+            <h3>Ordered List: Top 3 Programming Languages</h3>
+            <ol type="i">
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ol>
+            <h3>Unordered List: Web Development Tools</h3>
+            
+            <ul>
+                <li>VS Code</li>
+                <li>GitHub</li>
+                <li>Chrome DevTools</li>
+            </ul>
+            <h3>Description List: HTML5 Elements</h3>
+            <dl>
+                <dt>&lt;section&gt;</dt>
+                <dd>Defines a section in a document.</dd>
+                <dt>&lt;figure&gt;</dt>
+                <dd>Specifies self-contained content, like images with captions.</dd>
+            </dl>
+        </section>
+        <!-- Tables Section -->
+        <section id="tables">
+            <h2>Tables</h2>
+            <table>
+                <caption>Sample Student Grades</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>Math</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>Science</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Carol</td>
+                        <td>History</td>
+                        <td>A-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Media</h2>
+            <figure>
+                <img src="https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=612x612&w=0&k=20&c=nejA5SuHcN2fAdO7Bkaf9pJrwzyLPBCyOLZgMaslGko=" alt="Placeholder Image" width="300" height="200">
+                <figcaption>Sample Placeholder Image</figcaption>
+            </figure>
+            <figure>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Sample Video</figcaption>
+            </figure>
+        </section>
+        <!-- Form Section -->
+        <section id="form">
+            <h2>Contact & Feedback Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="40" placeholder="Enter your name" autocomplete="name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="userid">User ID:</label>
+                    <input type="text" id="userid" name="userid" pattern="[A-Za-z0-9]{5,12}" required placeholder="5-12 letters/numbers"><br><br>
+
+                    <label for="readonly">Referral Code:</label>
+                    <input type="text" id="readonly" name="referral" value="ABC123" readonly><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com" pattern="https://.*"><br><br>
+
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" cols="40" maxlength="200" required placeholder="Your feedback"></textarea><br><br>
+
+                    <label for="newsletter">Subscribe to newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Purity Munyendo</p>
+    </footer>
+</body>
+</html>
